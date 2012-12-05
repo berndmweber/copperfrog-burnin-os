@@ -30,8 +30,8 @@ See also: http://buildroot.org/downloads/manual/manual.html
 Build
 =====
 
-> cd buildroot-2012.11
-> make cf_burnin_defconfig
+    > cd buildroot-2012.11
+    > make cf_burnin_defconfig
 
 
 Output
@@ -49,9 +49,9 @@ How to boot
 Create a PXE boot setup with TFTP.
 Copy rootfs.cpio.lzma and bzImage into the TFTP directory, e.g. /tftpboot/tools/cf and refer to the files in the menu configuration via
 
-LABEL CF_Burnin
-  MENU LABEL ^4) Run CF Burnin software
-  KERNEL tools/cf/bzImage
-  APPEND initrd=tools/cf/rootfs.cpio.lzma vga=1
+    LABEL CF_Burnin
+      MENU LABEL ^4) Run CF Burnin software
+      KERNEL tools/cf/bzImage
+      APPEND initrd=tools/cf/rootfs.cpio.lzma vga=1
 
 
